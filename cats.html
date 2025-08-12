@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пет Кинг</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body class="container d-flex flex-column min-vh-100">
+  <div class="cursor-gradient"></div>
+    <header class="header">
+      <nav class="navbar navbar-expand-xl text-uppercase">
+        <div class="container d-flex justify-content-end">
+          <button class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="offcanvas"       
+                  data-bs-target="#offcanvasNavbar" 
+                  aria-controls="offcanvasNavbar"       
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end w-100 p-4" 
+                tabindex="-1" 
+                id="offcanvasNavbar"       
+                aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" 
+                class="btn-close" 
+                data-bs-dismiss="offcanvas"       
+                aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body justify-content-center text-center">
+              <ul class="navbar-nav">
+                <li class="nav-item p-1 p-md-3 fs-5">
+                  <a class="nav-link text-white" href="index.html" data-content="О&nbsp;нас">О&nbsp;нас</a>
+                </li>
+                <li class="nav-item p-1 p-md-3 fs-5">
+                  <a class="nav-link text-white" href="dogs.html" data-content="Для&nbsp;собак">Для&nbsp;собак</a>
+                </li>
+                <li class="nav-item p-1 p-md-3 fs-5">
+                  <a class="nav-link text-white active" aria-current="page" href="cats.html" data-content="Для&nbsp;кошек">Для&nbsp;кошек</a>
+                </li>
+                <li class="nav-item p-1 p-md-3 fs-5">
+                  <a class="nav-link text-white" href="production.html" data-content="Производство">Производство</a>
+                </li>
+                <li class="nav-item p-1 p-md-3 fs-5">
+                  <a class="nav-link text-white" href="index.html#stm" data-content="СТМ">СТМ</a>
+                </li>
+                <li class="nav-item p-1 p-md-3 fs-5">
+                  <a class="nav-link text-white" href="index.html#contacts" data-content="Контакты">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="d-flex flex-column flex-grow-1">
+      <h1 class="d-none">Пет Кинг для кошек</h1>
+
+      <!-- Сухие Полнорационные корма для кошек -->
+      <section class="container mt-5">
+        <div class="row d-flex align-items-center justify-content-around">
+          <div class="col-12 col-md-6 d-flex align-items-center justify-content-start">
+            <img src="assets/img/cats.webp" class="w-100 img-fluid" alt="Фотография упаковок корма">
+          </div>
+          <div class="col-12 col-md-5 d-flex flex-column align-items-start justify-content-start">
+            <h2 class="text-uppercase text-center text-md-start fw-bold px-3 px-md-0 py-3 my-md-3 text-gold">Сухие Полнорационные корма для кошек<span class="text-lowercase"><br>всех пород и&nbsp;возрастов</span> 
+            </h2>
+            <p class="fs-4 text-white">Наши формулы содержат увеличенное количество мясных ингредиентов, обеспечивая естественную вкусовую привлекательность без синтетических усилителей.</p>
+            <p class="fs-4 text-white">Каждый рецепт создан с&nbsp;учетом физиологии облигатных хищников.</p>
+          </div>
+        </div>       
+      </section>
+
+      <!-- Слайдер -->
+      <section class="container my-5 d-flex flex-column align-items-center justify-content-center">
+        <h2 class="col-12 col-md-9 text-uppercase fw-bold text-center px-3 px-md-0 py-3 my-md-3 text-gold">Cухой полнорационный корм для взрослых кошек средних и&nbsp;крупных пород</h2>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide container">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"        class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"        aria-label="Slide 2"></button>
+          </div>
+
+
+          <div class="mb-5 carousel-inner" style="min-height: 620px;">
+
+            <div class="carousel-item active">
+              <div class="d-flex flex-wrap align-items-center justify-content-around">
+                <div class="p-2 col-12 col-md-5 d-flex align-items-start justify-content-center d-none  d-md-block">
+                <ul class="list-unstyled">
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Поддержание здорового пищеварения</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Подходит для стерилизованных кошек</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Поддержание иммунитета</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Укрепление костей и&nbsp;зубов</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Красота шерсти и&nbsp;здоровье кожи</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Высокое качество продукта</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Здоровье сердца</li>
+                </ul>
+                </div>
+                <div class="p-2 col-12 col-md-5 d-flex align-items-start justify-content-center">
+                <img src="assets/img/catturkey.webp" class="w-100 img-fluid" alt="Фотография упаковок корма">
+                </div>
+                <div class="p-3 col-12 col-md-5 d-flex align-items-start justify-content-center">
+                <ul class="list-unstyled">
+                  <li class="list-item fs-6 text-white">
+                    <span class="fs-2 fst-italic text-uppercase">+</span>
+                    &nbsp;&nbsp;Дегидрированные белки: индейка
+                  </li>
+                  <li class="list-item fs-6 text-white">
+                    <span class="fs-2 fst-italic text-uppercase">+</span>
+                    &nbsp;&nbsp;Свежее мясо и&nbsp;субпродукты (печень, сердце)
+                  </li>
+                  <li class="list-item fs-6 text-white">
+                    <span class="fs-2 fst-italic text-uppercase">+</span>
+                    &nbsp;&nbsp;Цельнозерновой рис как безопасный источник энергии
+                  </li>
+                </ul>
+                </div>
+                <div class="p-3 col-12 col-md-5 d-flex align-items-start justify-content-center">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="fs-9 text-white text-center border-end">Белок</td>
+                      <td class="fs-9 text-white text-center border-end">Жир</td>
+                      <td class="fs-9 text-white text-center border-end">Клетчатка</td>
+                      <td class="fs-9 text-white text-center border-end">Зола</td>
+                      <td class="fs-9 text-white text-center">Влажность</td>
+                    </tr>
+                    <tr>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">26%</td>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">12%</td>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">2,6%</td>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">6,2%</td>
+                      <td class="fs-9 text-white text-center border-bottom-0">8%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="d-flex flex-wrap align-items-center justify-content-around">
+                <div class="p-2 col-12 col-md-5 d-flex align-items-start justify-content-center d-none d-md-block">
+                <ul class="list-unstyled">
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Поддержание здорового пищеварения</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Подходит для стерилизованных кошек</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Поддержание иммунитета</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Укрепление костей и&nbsp;зубов</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Красота шерсти и&nbsp;здоровье кожи</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Высокое качество продукта</li>
+                  <li class="py-2 list-item fs-4 text-gold">✔&nbsp;&nbsp;Здоровье сердца</li>
+                </ul>
+              </div>
+                <div class="p-2 col-12 col-md-5 d-flex align-items-start justify-content-center">
+                <img src="assets/img/catbif.webp" class="w-100 img-fluid" alt="Фотография упаковок корма">
+                </div>
+                <div class="p-3 col-12 col-md-5 d-flex align-items-start justify-content-center">
+                <ul class="list-unstyled">
+                  <li class="list-item fs-6 text-white">
+                    <span class="fs-2 fst-italic text-uppercase">+</span>
+                    &nbsp;&nbsp;Дегидрированные белки: курица, телятина
+                  </li>
+                  <li class="list-item fs-6 text-white">
+                    <span class="fs-2 fst-italic text-uppercase">+</span>
+                    &nbsp;&nbsp;Свежее мясо и&nbsp;субпродукты (печень, сердце)
+                  </li>
+                  <li class="list-item fs-6 text-white">
+                    <span class="fs-2 fst-italic text-uppercase">+</span>
+                    &nbsp;&nbsp;Цельнозерновой рис как безопасный источник энергии
+                  </li>
+                </ul>
+                </div>
+                <div class="p-3 col-12 col-md-5 d-flex align-items-start justify-content-center">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="fs-9 text-white text-center border-end">Белок</td>
+                      <td class="fs-9 text-white text-center border-end">Жир</td>
+                      <td class="fs-9 text-white text-center border-end">Клетчатка</td>
+                      <td class="fs-9 text-white text-center border-end">Зола</td>
+                      <td class="fs-9 text-white text-center">Влажность</td>
+                    </tr>
+                    <tr>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">26%</td>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">12%</td>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">2,4%</td>
+                      <td class="fs-9 text-white text-center border-end border-bottom-0">6,5%</td>
+                      <td class="fs-9 text-white text-center border-bottom-0">8%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <button class="carousel-control-prev d-flex align-items-center justify-content-start" type="button"         data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next d-flex align-items-center justify-content-end" type="button"         data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </section>
+
+      <!-- Закажите корм для своей кошки здесь: -->
+      <section class="container mb-5 pb-5 d-flex flex-column align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-start">
+          <div class="col-12 col-md-6 p-2 p-md-0 m-2 m-md-0">
+            <h5 class="text-uppercase text-white m-0">Закажите корм для своей кошке здесь:</h5>
+          </div>
+          <div class="col-12 col-md-3 p-2 m-2 m-md-0">
+            <a class="text-white" href="#" data-content="waldberries">
+              <img src="assets/img/wb.webp" class="w-75 img-fluid" alt="Логотип waldberries">
+            </a>
+          </div>
+          <div class="col-12 col-md-3 p-2 m-2 m-md-0">
+            <a class="text-white" href="#" data-content="ozon">
+              <img src="assets/img/ozon.webp" class="w-50 img-fluid" alt="Логотип ozon">
+            </a>
+          </div>
+          
+        </div>  
+      </section>
+
+
+    </main>
+
+    <footer id="contacts" class="mt-auto mb-3 d-flex flex-wrap">
+      <div class="col-12 col-md-3 d-flex flex-column align-items-start justify-content-start px-3 py-4 py-md-0 border-end-md">
+        <h6 class="text-uppercase text-white">
+          Контакты для связи:
+        </h6>
+        <p class="text-white m-0">
+          <a class="text-decoration-none text-reset" href="tel:+78955139988">8 895 513 99 88, </a>
+          <a class="text-decoration-none text-reset" href="tel:+79773137784">8 977 313 77 84</a>
+        </p>
+      </div>
+      <div class="col-12 col-md-3 d-flex flex-column align-items-start justify-content-start border-end-md px-3 py-4 py-md-0">
+        <h6 class=" text-uppercase text-white">
+          Адрес производства:
+        </h6>
+        <p class="text-white m-0">
+          г. Майкоп, ул. Юннатов 9в
+        </p>
+      </div>
+      <div class="col-12 col-md-3 d-flex flex-column align-items-start justify-content-start px-3 py-4 py-md-0">
+        <h6 class="text-uppercase text-white">
+          Заказать СТМ &laquo;под ключ&raquo;
+        </h6>
+        <p class="text-white m-0">
+          Оставьте контакты и&nbsp;мы&nbsp;сами вам перезвоним
+        </p>
+      </div>
+      <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center px-3 py-4 py-md-0">
+        <button class="button gradient-gold text-green">
+          <span class="text">Оставить заявку</span>
+          <span class="shimmer"></span>
+        </button>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
